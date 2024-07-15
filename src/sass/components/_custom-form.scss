@@ -1,0 +1,15 @@
+.custom-form {
+    box-shadow: 0 0 5px #000;
+    display: flex;
+    flex-direction: column;
+    & > section:first-of-type {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & > section:last-of-type {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+}
