@@ -1,0 +1,32 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.header-layout {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 8vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: 20;
+	background-color: rgba($color: #000000, $alpha: 0.3);
+	padding-inline: 10px;
+	@include mixins.show-down-slowly(2000ms, 5000ms);
+
+	i {
+		color: variables.$pink;
+		&:hover {
+			color: variables.$yellow;
+		}
+	}
+
+	figure {
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		overflow: hidden;
+		border: solid variables.$pink 2px;
+	}
+}

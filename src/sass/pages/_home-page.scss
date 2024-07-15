@@ -1,0 +1,15 @@
+@use "../abstracts/extensions";
+@use "../abstracts/mixins";
+
+.home {
+	&__main {
+		@extend %match-bg;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		@include mixins.appear-slowly(300ms);
+		header {
+			@include mixins.vanish-off(5000ms, "up");
+		}
+	}
+}

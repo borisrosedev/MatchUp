@@ -1,0 +1,25 @@
+@use "./extensions";
+@use "./keyframes";
+
+@mixin darken-bg($val: 0.4) {
+	@extend %match-bg;
+	background-color: rgba($color: #000000, $alpha: $val);
+	background-blend-mode: multiply;
+}
+
+@mixin appear-slowly($time: 1000ms) {
+	animation: show-up $time ease-in-out forwards;
+}
+
+@mixin show-down-slowly($time: 1000ms, $delay: 0) {
+	opacity: 0;
+	animation: show-down $time ease-in-out $delay forwards;
+}
+
+@mixin vanish-off($time: 1000ms, $way: "down") {
+	@if $way == "up" {
+		animation: vanish-up $time ease-in-out forwards;
+	} @else if $way == "down" {
+		animation: vanish-down $time ease-in-out forwards;
+	}
+}

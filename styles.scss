@@ -1,7 +1,18 @@
-@use './src/sass/base/typography';
-@use './src/sass/abstracts/variables';
-@use './src/sass/abstracts/keyframes';
-@use './src/sass/base/base';
+@use "./src/sass/base/typography";
+@use "./src/sass/abstracts/variables";
+@use "./src/sass/abstracts/extensions";
+@use "./src/sass/abstracts/mixins";
+@use "./src/sass/abstracts/keyframes";
+@use "./src/sass/base/base";
 
-@use './src/sass/components/custom-article-input';
-@use './src/sass/components/custom-button';
+@use "./src/sass/layout/header-layout";
+@use "./src/sass/layout/main-layout";
+
+@use "./src/sass/components/custom-icon";
+@use "./src/sass/components/custom-anchor";
+@use "./src/sass/components/custom-nav";
+@use "./src/sass/components/custom-article-input";
+@use "./src/sass/components/custom-button";
+@use "./src/sass/components/custom-title";
+
+@use "./src/sass/pages/home-page";
