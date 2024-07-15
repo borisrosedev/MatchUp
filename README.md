@@ -1,4 +1,11 @@
 
+# Récupérer ce dossier en local
+
+```bash
+    git clone url_du_depot_distant
+```
+
+
 # Marche à suivre
 - Installer Git sur votre système afin d'avoir automatiquement git bash
 - Installer Node.js (c'est un environnement d'exécution du javascript)
