@@ -1,3 +1,4 @@
+@use "./src/sass/vendor/bulma";
 @use "./src/sass/base/typography";
 @use "./src/sass/abstracts/variables";
 @use "./src/sass/abstracts/extensions";
@@ -8,6 +9,7 @@
 @use "./src/sass/layout/header-layout";
 @use "./src/sass/layout/main-layout";
 
+@use "./src/sass/components/custom-form";
 @use "./src/sass/components/custom-message";
 @use "./src/sass/components/custom-icon";
 @use "./src/sass/components/custom-anchor";
@@ -17,3 +19,4 @@
 @use "./src/sass/components/custom-title";
 
 @use "./src/sass/pages/home-page";
+@use "./src/sass/pages/log-page";

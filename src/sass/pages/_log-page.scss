@@ -1,4 +1,31 @@
+@use "../abstracts/extensions";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
 .log {
 	&__main {
+		@extend %match-bg;
+		@include mixins.appear-slowly(300ms);
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+
+		& > section {
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+			border-radius: 10px;
+			width: 400px;
+			background-color: rgba(0, 0, 0, 0.6);
+			& > aside {
+				
+				text-align: center;
+				margin-block: 5px;
+				a {
+					color: variables.$pink ;
+				}
+			}
+		}
+	
 	}
 }

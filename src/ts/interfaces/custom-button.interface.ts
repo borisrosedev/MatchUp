@@ -1,5 +1,7 @@
 export default interface CustomButton {
-	type?: string
+	id: string
+	textContent: string
 	bulmaClassNames: string
-	customClassNames: string
+	customClassNames?: string
+	type?: string
 }

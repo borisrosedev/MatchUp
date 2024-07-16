@@ -1,9 +1,9 @@
 export default function (data: any) {
 	return `
             <button
-                type="${data.type ? data.type : "text"}" 
-                class="${data.bulmaClassNames}
-                ${data.customClassNames}"
+                id="${data.id}"
+                type="${data.type ? data.type : "button"}" 
+                class="${data.bulmaClassNames} ${data.customClassNames ? data.customClassNames : ""}"
             >
                 ${data.textContent}
             </button>

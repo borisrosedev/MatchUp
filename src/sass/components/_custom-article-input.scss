@@ -1,19 +1,22 @@
-_custom-article-input {
+@use "../abstracts/variables";
+
+.article-input {
 	display: flex;
 	flex-direction: column;
-	margin-block: 5px;
+	margin-block: 10px;
 
 	input {
-		border-radius: 10px;
+		border-radius: 5px;
 		padding: 10px;
 		border: none;
+		outline: variables.$pink solid 2px;
 	}
 
 	.error {
-		height: 20px;
-		text-align: center;
+
+
 		padding: 5px;
-		p {
+		small {
 			color: rgb(236, 135, 135);
 		}
 	}

@@ -1,6 +1,8 @@
 import homeView from "./src/ts/views/home-view/home-view"
 import headerLayout from "./src/ts/layout/header-layout/header-layout"
 import HomeContainer from "./src/ts/containers/home-container/home-container"
+import logView from "./src/ts/views/log-view/log-view"
+import LogContainer from "./src/ts/containers/log-container/log-container"
 
 declare global {
 	interface Window {
@@ -31,9 +33,13 @@ export function navigateToPage(h: string) {
 			break
 		case "#login":
 			console.log("login page")
+			app.innerHTML += logView(true)
+			new LogContainer(window.onNavigate)
 			break
 		case "#register":
 			console.log("register page")
+			app.innerHTML += logView(false)
+			new LogContainer(window.onNavigate, false)
 			break
 		case "#dashboard":
 			console.log("dashboard page")
