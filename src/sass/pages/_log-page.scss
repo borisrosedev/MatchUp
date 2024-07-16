@@ -18,14 +18,12 @@
 			width: 400px;
 			background-color: rgba(0, 0, 0, 0.6);
 			& > aside {
-				
 				text-align: center;
 				margin-block: 5px;
 				a {
-					color: variables.$pink ;
+					color: variables.$pink;
 				}
 			}
 		}
-	
 	}
 }
