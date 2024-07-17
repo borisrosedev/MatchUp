@@ -1,0 +1,42 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.custom-header {
+ 
+    &--layout {
+        @include mixins.flex-box();
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 8vh;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        padding-inline: 10px;
+        
+
+        figure {
+            height: 50px;
+            width: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        nav {
+            a {
+                color: variables.$primary-color;
+                margin-inline: 10px;
+                transition: all ease-in-out 300ms;
+                &:hover {
+                    color: variables.$primary-color
+                }
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+       
+        
+    }
+}
+

@@ -1,12 +1,7 @@
-interface ButtonProps {
-    id: string
-    textContent: string;
-    type?: 'subit' | 'reset' | 'button'
-    classNames?: string
-}
+import Button from "../../interfaces/button.interface";
 
 
-export default function({ id, textContent, type, classNames}: ButtonProps){
+export default function({ id, textContent, type, classNames}: Button){
     return(
         `
             <button 

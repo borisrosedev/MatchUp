@@ -10,6 +10,11 @@ body {
     margin: 0;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
 ul, li, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
@@ -29,4 +34,6 @@ img {
 
 main {
     display: flex;
+    padding-top: 8vh;
+    min-height: 100vh;
 }

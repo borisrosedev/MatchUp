@@ -1,0 +1,26 @@
+@use "../abstracts/variables"
+;
+@use "../abstracts/mixins";
+
+.form-field {
+    margin-block: 10px;
+    width: 100%;
+    @include mixins.flex-box(column, flex-start);
+  
+
+
+    input {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        outline: solid 2px variables.$primary-color;
+        width: 100%;
+    }
+
+    .error {
+        display: flex;
+        color: rgb(181, 89, 89);
+        padding-block: 2px;
+    }
+    
+}

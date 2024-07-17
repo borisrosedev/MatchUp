@@ -1,0 +1,22 @@
+@use "../abstracts/mixins";
+.form {
+    @include mixins.flex-box(column, flex-start);
+  
+
+    & > section:first-of-type {
+        width: 100%;
+        @include mixins.flex-box(column, flex-start);
+    
+    
+  
+    }
+
+    & > section:last-of-type {
+
+        @include mixins.flex-box(row, center);
+        justify-content: space-between;
+        width: 100%;
+        padding-block: 10px;
+    }
+ 
+}
