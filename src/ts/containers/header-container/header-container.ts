@@ -5,9 +5,9 @@ import { OnNavigateType } from "../../types/on-navigate.type";
 
 export default class HeaderContainer {
 	localStorageService: LocalStorageService;
-    onNavigate: OnNavigateType
+	onNavigate: OnNavigateType;
 	constructor(onNavigate: OnNavigateType) {
-        this.onNavigate = onNavigate
+		this.onNavigate = onNavigate;
 		this.localStorageService = new LocalStorageService();
 
 		const header = document.getElementById("header-layout");
@@ -24,15 +24,13 @@ export default class HeaderContainer {
 		};
 
 		if (user.email) {
-            console.log('user')
+			console.log("user");
 			headerNav.anchors.pop();
 			headerNav.anchors.push({
 				template: fontawesomeIcon("fa-solid fa-right-from-bracket"),
 				href: "#logout"
 			});
-
-		} 
+		}
 		header.innerHTML += nav(headerNav);
-		
 	}
 }

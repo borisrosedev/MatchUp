@@ -1,8 +1,7 @@
 @use "../abstracts/variables";
 .nav-question {
-    a { 
-        margin-inline: 5px;
-        color: variables.$primary-color;
-
-    }
+	a {
+		margin-inline: 5px;
+		color: variables.$primary-color;
+	}
 }

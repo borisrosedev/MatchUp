@@ -1,6 +1,6 @@
 export default interface Button {
-    id: string
-    textContent: string;
-    type?: 'submit' | 'reset' | 'button'
-    classNames?: string
+	id: string;
+	textContent: string;
+	type?: "submit" | "reset" | "button";
+	classNames?: string;
 }

@@ -1,14 +1,10 @@
 @use "../abstracts/mixins";
 
 .notification-aside {
-    @include mixins.show-up();
-    & {
-
-        position: fixed;
-        bottom: 10px;
-        align-self: center;
-    }
-  
-    
-
+	@include mixins.show-up();
+	& {
+		position: fixed;
+		bottom: 10px;
+		align-self: center;
+	}
 }
