@@ -10,20 +10,12 @@ export default function() {
         template : figure({ img: { src: "/assets/logo.png", alt: "logo de l'application"}}, )
     }
 
-    const headerNav = {
-        anchors: [
-            {
-                template: fontawesomeIcon("fa-solid fa-right-to-bracket"),
-                href: "#login"
-            }
-        ]
-    }
 
      return(
         `
-            <header class="header custom-header custom-header--layout">
+            <header class="header custom-header custom-header--layout" id="header-layout">
             ${anchor(titleAnchor)}
-            ${nav(headerNav)}
+     
             </header>
         
         `

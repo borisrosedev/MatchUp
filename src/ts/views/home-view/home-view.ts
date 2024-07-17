@@ -3,7 +3,7 @@
 function homeView(){
     return(
         `
-            <main class="home__main">
+            <main class="main home__main">
          
             </main>
         

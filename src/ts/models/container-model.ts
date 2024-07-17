@@ -1,9 +1,9 @@
-import { onNavigateType } from "../types/on-navigate.type";
+import { OnNavigateType } from "../types/on-navigate.type";
 import BusinessLayerModel from "./business-layer-model";
 
 export default class ContainerModel extends BusinessLayerModel {
-    onNavigate: onNavigateType
-    constructor(onNavitate: onNavigateType){
+    onNavigate: OnNavigateType
+    constructor(onNavitate: OnNavigateType){
         super()
         this.onNavigate = onNavitate
     }

@@ -7,7 +7,7 @@ interface NavProps {
 
 export default function (d: NavProps) {
 	return `
-            <nav class="nav">
+            <nav class="nav" id="header-nav">
                 ${d.anchors.map((el: any) => anchor(el)).join("")}
             </nav>
         

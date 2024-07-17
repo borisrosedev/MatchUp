@@ -13,7 +13,7 @@ export default class FormatService {
         if(!result){
             return "Format de l'email incorrect - tous les caractères doivent être écrits en minuscule"
         } else {
-            return this.checkEmailFormat(e)
+            return this.checkEmailFormatHarder(e)
         }
     }
 
