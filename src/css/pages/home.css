@@ -1,0 +1,27 @@
+.home__main {
+
+    background-image: url('/assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* 
+    opacity: 0
+    animation: appear  300ms ease-in-out forwards;
+    */
+
+    h1 {
+        color: #fff;
+        opacity: 0;
+        font-size: 30px;
+        animation: show-down 1s ease-in-out forwards;
+
+    }
+
+    section {
+        margin-block: 10px;
+    }
+
+}
