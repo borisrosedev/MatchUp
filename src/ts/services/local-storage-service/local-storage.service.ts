@@ -19,4 +19,10 @@ export default class LocalStorageService extends BusinessLayerServiceModel {
 		}
 		localStorage.setItem(k, JSON.stringify(val));
 	}
+
+	removeItem(k: string){
+		if (this.getItem(k)) {
+			localStorage.removeItem(k);
+		} 
+	}
 }

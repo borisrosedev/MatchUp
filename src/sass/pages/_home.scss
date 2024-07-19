@@ -1,8 +1,22 @@
-.home__main {
-	background-image: url("/assets/bg.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	align-items: center;
-	justify-content: center;
+@use "../abstracts/extensions";
+@use "../abstracts/mixins";
+
+
+.home {
+
+	&__main {
+		@extend %match-up-bg;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__logo {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		overflow: hidden;
+		@include mixins.show-down();
+		
+
+	}
 }

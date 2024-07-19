@@ -1,8 +1,9 @@
 function homeView() {
 	return `
-            <main class="main home__main">
-         
-            </main>
+            <main 
+                id="home-main"
+                class="main home__main"
+            ></main>
         
         `;
 }

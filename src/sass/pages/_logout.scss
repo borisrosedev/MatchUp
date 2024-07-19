@@ -1,9 +1,12 @@
+@use "../abstracts/mixins";
 @use "../abstracts/extensions";
 
-.dashboard {
+
+.logout {
 	&__main {
 		@extend %match-up-bg;
 		align-items: center;
 		justify-content: center;
+
 	}
 }

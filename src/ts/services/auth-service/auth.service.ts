@@ -32,5 +32,10 @@ export default class AuthService extends BusinessLayerServiceModel {
 
 	async signup({ e, p }: { e: string; p: string }) {}
 
-	logout() {}
+	logout() {
+		this.localStorageService.removeItem("user")
+		this.notificationService.content = {
+			content: "Déconnexion réussie"
+		}
+	}
 }
