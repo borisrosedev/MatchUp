@@ -9,6 +9,6 @@
 		"target": "ES2015",
 		"types": ["jest"]
 	},
-	"include": ["src/**/*.ts"],
+	"include": ["src/**/*.ts", "**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
 	"exclude": ["node_modules"]
 }
