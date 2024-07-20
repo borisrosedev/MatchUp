@@ -14,12 +14,15 @@ import NotFoundVue from "./src/ts/views/not-found-view/not-found.vue";
 
 import { Liquid } from "liquidjs";
 import Alpine from "alpinejs";
-import { createApp } from "vue";  // Correct import for Vue 3
+import { createApp } from "vue";
+import ContactContainer from "./src/ts/containers/contact-container/contact-container";
 
 declare global {
     interface Window {
         onNavigate: OnNavigateType;
+        Alpine: any;
     }
+
 }
 
 window.onNavigate = (h: string) => {
@@ -66,6 +69,9 @@ function navigateToPage(h: string) {
             const engine = new Liquid({
                 cache: true
             });
+            window.Alpine = Alpine as any;
+            new ContactContainer(window.onNavigate,Alpine)
+      
             break;
         default:
             const notFound = createApp(NotFoundVue);  // Correct usage of createApp

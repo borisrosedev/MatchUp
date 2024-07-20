@@ -1,0 +1,9 @@
+@use "../abstracts/extensions";
+.contact {
+
+    &__main {
+        @extend %match-up-bg;
+		align-items: center;
+		justify-content: center;
+    }
+}
