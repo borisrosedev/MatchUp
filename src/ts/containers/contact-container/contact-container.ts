@@ -19,14 +19,30 @@ export default class ContactContainer {
     initializeAlpine(): Promise<void> {
         return new Promise((resolve, reject) => {
             try {
+                document.addEventListener('alpine:init', () => {
+                    console.log('🔫 alpine init')
+                    this.Alpine.data('contact', () => ({
+                        init(){
+                            console.log('contact-data initialized')
+                        },
+                        submitContactForm(){
+                            alert('submitted')
+                        }
+                    }))
+                })
                 this.Alpine.start();
                 console.log('✅ Alpine initialized');
+             
+          
+                
                 resolve();
             } catch (error) {
                 reject(error);
             }
         });
     }
+
+ 
 
     // Fonction pour initialiser le store
     initializeStore() {

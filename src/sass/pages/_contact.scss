@@ -5,5 +5,10 @@
         @extend %match-up-bg;
 		align-items: center;
 		justify-content: center;
+
+        section {
+            width: 400px;
+
+        }
     }
 }

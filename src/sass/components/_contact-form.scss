@@ -1,0 +1,52 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.contact-form {
+	@include mixins.flex-box(column, flex-start);
+
+
+
+	& > section:first-of-type {
+		width: 100%;
+		@include mixins.flex-box(column, flex-start);
+		
+
+		div {
+			display: flex;
+			width: 100%;
+			article {
+				margin-block: 10px;
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				input, textarea {
+					padding: 10px;
+					border-radius: 10px;
+					border: none;
+					outline: variables.$primary-color solid 2px;
+					&::placeholder {
+							font-family: "Poppins", sans-serif;
+					}
+				}
+				textarea {
+					
+					resize: none;
+					height: 200px;
+				
+				
+					
+					
+				}
+			}
+
+			
+		}
+	}
+
+	& > section:last-of-type {
+		@include mixins.flex-box(row, center);
+		justify-content: space-between;
+		width: 100%;
+		padding-block: 10px;
+	}
+}
